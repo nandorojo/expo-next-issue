@@ -35,3 +35,26 @@ export default function Index() {
 ```
 
 **3. open [http://localhost:3000](http://localhost:3000)**
+
+## result
+
+The app fails to compile. However, it works fine if I replace `Button` with a typical `Text` from `react-native`.
+
+```es6
+[ wait ]  compiling ...
+[ error ] ./node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf 1:0
+Module parse failed: Unexpected character '' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+(Source code omitted for this binary file)
+ModuleParseError: Module parse failed: Unexpected character '' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+(Source code omitted for this binary file)
+    at handleParseError (/Users/expo-next-test/node_modules/next/node_modules/webpack/lib/NormalModule.js:469:19)
+    at /Users/expo-next-test/node_modules/next/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/expo-next-test/node_modules/next/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/expo-next-test/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/expo-next-test/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at /Users/expo-next-test/node_modules/loader-runner/lib/LoaderRunner.js:205:4
+    at /Users/expo-next-test/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:85:15
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+```
